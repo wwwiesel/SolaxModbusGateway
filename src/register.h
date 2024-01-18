@@ -806,6 +806,50 @@ const char JSON[] PROGMEM = R"=====(
 			]
 		}
 	},
+	"Growatt-MOD-Type": {
+		"config": {
+			"RequestLiveData": [
+				["#ClientID", "0x03", "0x00", "0x00", "0x00", "0x77"],
+				["#ClientID", "0x04", "0x0B", "0xB8", "0x00", "0x77"]
+			],
+			"RequestIdData": ["#ClientID", "0x03", "0x00", "0x00", "0x00", "0x14"],
+			"ClientIdPos": 0,
+			"LiveDataFunctionCodePos": 1,
+			"LiveDataFunctionCode": "0x04",
+			"IdDataFunctionCodePos": 1,
+			"IdDataFunctionCode": "0x03",
+			"LiveDataStartsAtPos": 3,
+			"IdDataStartsAtPos": 3,
+			"LiveDataErrorPos": 1,
+			"LiveDataErrorCode": "0x84",
+			"IdDataErrorPos": 1,
+			"IdDataErrorCode": "0x83",
+			"LiveDataSuccessPos": 1,
+			"LiveDataSuccessCode": "0x04",
+			"IdDataSuccessPos": 1,
+			"IdDataSuccessCode": "0x03"
+		},
+		"data": {
+			"livedata": [
+			
+				{
+					"position": [354, 355, 356, 357],
+					"name": "OutputEnergyChargeKwh",
+					"realname": "Entladene Energie Speicher (KWh)",
+					"datatype": "float",
+					"factor": 0.1,
+					"unit": "KWh"
+				}
+			],
+			"id": [
+			{
+				"position": [49, 50, 51, 52, 53, 54, 55, 56, 57, 58],
+				"name": "InverterSN",
+				"realname": "Inverter SerialNumber",
+				"datatype": "string"
+			}]
+		}
+	},
 	"Growatt-SPH": {
 		"config": {
 			"RequestLiveData": [
