@@ -810,7 +810,9 @@ const char JSON[] PROGMEM = R"=====(
 		"config": {
 			"RequestLiveData": [
 				["#ClientID", "0x03", "0x00", "0x00", "0x00", "0x77"],
-				["#ClientID", "0x04", "0x0B", "0xB8", "0x00", "0x77"]
+				["#ClientID", "0x03", "0x0B", "0xB8", "0x00", "0x77"],
+				["#ClientID", "0x04", "0x0B", "0xB8", "0x00", "0x77"],
+				["#ClientID", "0x04", "0x0C", "0x35", "0x00", "0x77"]
 			],
 			"RequestIdData": ["#ClientID", "0x03", "0x00", "0x00", "0x00", "0x14"],
 			"ClientIdPos": 0,
@@ -838,7 +840,7 @@ const char JSON[] PROGMEM = R"=====(
 					"realname": "Entladene Energie Speicher (KWh)",
 					"datatype": "float",
 					"factor": 0.1,
-					"unit": "KWh"
+					"unit": "KWh" 
 				}
 			],
 			"id": [
